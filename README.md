@@ -23,14 +23,34 @@ requested onto the DOM.
 
 #### Make a request to Star Wars API Endpoint
 
+- Create a new XHR object
+```js 
+var oReq = new XMLHttpRequest();
+```
+- Declare a function to be used as the event listener.
 ```js
-function reqListener() {
+function reqListener () {
+  console.log(this.responseText);
+}
+```
+- Attach the event listener to an event
+``` js
+oReq.addEventListener("load", reqListener);
+```
+- Set the destination and send the request!
+``` js
+oReq.open("GET", "http://www.google.com");
+oReq.send();
+```
+- The code 
+```js 
+function reqListener () {
   console.log(this.responseText);
 }
 
 var oReq = new XMLHttpRequest();
-oReq.addEventListener('load', reqListener);
-oReq.open('GET', 'http://www.example.org/example.txt');
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "http://www.example.com/api");
 oReq.send();
 ```
 
