@@ -93,6 +93,9 @@ oReq.send();
 ## Resources
 
 [SWAPI](https://swapi.co/documentation#intro)
+
 [Using XMLHttpRequest - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+
 [HTML DOM createElement() Method](https://www.w3schools.com/jsreaf/met_document_createelement.asp)
+
 [HTML DOM appendChild() Method](https://www.w3schools.com/jsref/met_node_appendchild.asp)
